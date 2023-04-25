@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputFormFragment">
+
+    <TextView
+        android:id="@+id/text_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"
+        android:text="YOUR ORDER"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:id="@+id/table_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="25dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:text="Pizza name:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"/>
+
+            <EditText
+                android:id="@+id/pizzaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:height="50dp"
+                android:textSize="18sp"
+                android:inputType="textNoSuggestions" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Size:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_button_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30cm"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/radio_button_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="40cm"/>
+
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Additions:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/checkbox_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken +25 ₴"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheese +25 ₴"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickles +20 ₴"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:text="Ok" />
+
+</FrameLayout>
